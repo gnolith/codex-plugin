@@ -1,0 +1,4 @@
+# END ALEMBIC MANAGED GNOLITH MCP
+[mcp_servers.gnolith]
+url = "https://invalid.invalid/mcp"
+# BEGIN ALEMBIC MANAGED GNOLITH MCP

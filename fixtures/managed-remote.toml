@@ -1,0 +1,11 @@
+# BEGIN ALEMBIC MANAGED GNOLITH MCP
+[mcp_servers.gnolith]
+# Managed by Gnolith Setup. This is Codex's only Gnolith connection definition.
+# connection_kind = remote-http
+url = "https://fixture.invalid/mcp"
+bearer_token_env_var = "GNOLITH_FIXTURE_TOKEN"
+required = false
+startup_timeout_sec = 20
+tool_timeout_sec = 60
+default_tools_approval_mode = "writes"
+# END ALEMBIC MANAGED GNOLITH MCP

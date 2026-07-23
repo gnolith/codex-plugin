@@ -1,0 +1,47 @@
+{
+  "name": "@gnolith/codex-plugin",
+  "version": "0.3.0",
+  "private": true,
+  "description": "Unpublished read-only Gnolith Setup 0.2.0 migration compatibility library for Alembic.",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist/",
+    "fixtures/",
+    "MIGRATION.md",
+    "ARCHIVAL.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "clean": "node scripts/clean.mjs",
+    "build": "npm run clean && tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:security": "vitest run test/security.test.ts test/read-only.test.ts",
+    "security:secrets": "node scripts/scan-secrets.mjs",
+    "verify:static": "node scripts/verify-static.mjs",
+    "verify:pack": "node scripts/verify-pack.mjs",
+    "check": "npm run typecheck && npm run build && npm test && npm run test:security && npm run security:secrets && npm run verify:static && npm run verify:pack && npm audit --omit=dev",
+    "prepack": "npm run build && npm run verify:static"
+  },
+  "dependencies": {
+    "smol-toml": "1.7.0"
+  },
+  "devDependencies": {
+    "@types/node": "24.13.3",
+    "typescript": "5.9.3",
+    "vitest": "3.2.7"
+  }
+}

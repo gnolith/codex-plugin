@@ -1,0 +1,8 @@
+{
+  "algorithm": "sha256",
+  "configFile": "managed-remote.toml",
+  "configDigest": "9ccb722fe9aada2e0eb906f4861c2cfac116b1194c2d9d8a84d90b121b593272",
+  "legacyMarkerDigest": "9ccb722fe9aada2e0eb906f4861c2cfac116b1194c2d9d8a84d90b121b593272",
+  "lineEnding": "LF",
+  "terminalLf": true
+}
