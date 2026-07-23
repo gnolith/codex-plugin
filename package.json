@@ -1,7 +1,6 @@
 {
   "name": "@gnolith/codex-plugin",
   "version": "0.3.0",
-  "private": true,
   "description": "Unpublished read-only Gnolith Setup 0.2.0 migration compatibility library for Alembic.",
   "type": "module",
   "license": "MIT",
