@@ -3,10 +3,10 @@
     "id": "@gnolith/codex-plugin@0.3.0",
     "name": "@gnolith/codex-plugin",
     "version": "0.3.0",
-    "size": 19144,
-    "unpackedSize": 73391,
-    "shasum": "aeaa9dafbe0de552c0a29d3c3c4a9405d2a59b64",
-    "integrity": "sha512-WuYDsxgjP4B7ylfYjQqGAaSoWFRBFi+Cc05zcxH0katjeH2GuhK5ephjk1soys59JV0USKmwWGSMCl4mjsFgKA==",
+    "size": 19135,
+    "unpackedSize": 73372,
+    "shasum": "8bff79e512090f105beb3523b72b9e38f896ffe0",
+    "integrity": "sha512-ucwa4bv5FjA3aQS0wxlarFYIgfRJt5V/mqII8VA/smO6q+uA9l+1vOhsbEh7WVBw6RrkaAnFUA6VbdleEeOnZA==",
     "filename": "gnolith-codex-plugin-0.3.0.tgz",
     "files": [
       {
@@ -96,7 +96,7 @@
       },
       {
         "path": "package.json",
-        "size": 1349,
+        "size": 1330,
         "mode": 420
       }
     ],

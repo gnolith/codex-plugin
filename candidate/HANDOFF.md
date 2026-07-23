@@ -3,11 +3,11 @@
 ## Candidate identity
 
 - candidate version: `0.3.0`
-- package source commit: `01452c83ec55db30f3e0b73b77ed9921961b5ab1`
+- package source commit: `9356dd8036678e85023f11b7b58a66888f2eaa35`
 - artifact: `gnolith-codex-plugin-0.3.0.tgz`
 - artifact SHA-256:
-  `ff612ec9546c39675e19a01ae35aa3c9082a8ae580af6ed593ae766185974f29`
-- npm SHA-1: `aeaa9dafbe0de552c0a29d3c3c4a9405d2a59b64`
+  `25ec8458130527bbf71662e0dc2c9bea79c0311d6419370b7cfa246fd25ba89c`
+- npm SHA-1: `8bff79e512090f105beb3523b72b9e38f896ffe0`
 - publication/tag/deprecation: not performed
 - archival: not authorized
 

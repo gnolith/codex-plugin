@@ -31,8 +31,8 @@ npm notice version: 0.3.0
 npm notice filename: gnolith-codex-plugin-0.3.0.tgz
 npm notice package size: 19.1 kB
 npm notice unpacked size: 73.4 kB
-npm notice shasum: aeaa9dafbe0de552c0a29d3c3c4a9405d2a59b64
-npm notice integrity: sha512-WuYDsxgjP4B7y[...]GSMCl4mjsFgKA==
+npm notice shasum: 8bff79e512090f105beb3523b72b9e38f896ffe0
+npm notice integrity: sha512-ucwa4bv5FjA3a[...]A6VbdleEeOnZA==
 npm notice total files: 18
 npm notice
 npm warn This command requires you to be logged in to https://registry.npmjs.org/ (dry-run)

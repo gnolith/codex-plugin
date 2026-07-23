@@ -22,13 +22,13 @@
  RUN  v3.2.7 C:/Users/kcsfe/repos/gnolith/gnolith
 
  ✓ test/read-only.test.ts (2 tests) 23ms
- ✓ test/security.test.ts (5 tests) 60ms
- ✓ test/legacy.test.ts (6 tests) 60ms
+ ✓ test/security.test.ts (5 tests) 61ms
+ ✓ test/legacy.test.ts (6 tests) 58ms
 
  Test Files  3 passed (3)
       Tests  13 passed (13)
-   Start at  15:06:38
-   Duration  1.75s (transform 109ms, setup 0ms, collect 244ms, tests 144ms, environment 0ms, prepare 237ms)
+   Start at  15:12:52
+   Duration  1.93s (transform 116ms, setup 0ms, collect 255ms, tests 141ms, environment 0ms, prepare 254ms)
 
 
 > @gnolith/codex-plugin@0.3.0 test:security
@@ -37,13 +37,13 @@
 
  RUN  v3.2.7 C:/Users/kcsfe/repos/gnolith/gnolith
 
- ✓ test/read-only.test.ts (2 tests) 22ms
- ✓ test/security.test.ts (5 tests) 62ms
+ ✓ test/read-only.test.ts (2 tests) 24ms
+ ✓ test/security.test.ts (5 tests) 61ms
 
  Test Files  2 passed (2)
       Tests  7 passed (7)
-   Start at  15:06:41
-   Duration  1.75s (transform 73ms, setup 0ms, collect 151ms, tests 84ms, environment 0ms, prepare 181ms)
+   Start at  15:12:55
+   Duration  1.75s (transform 82ms, setup 0ms, collect 162ms, tests 84ms, environment 0ms, prepare 167ms)
 
 
 > @gnolith/codex-plugin@0.3.0 security:secrets
@@ -54,7 +54,7 @@ repository secret scan passed
 > @gnolith/codex-plugin@0.3.0 verify:static
 > node scripts/verify-static.mjs
 
-static sunset verification passed (1214 repository files inspected)
+static sunset verification passed (1236 repository files inspected)
 
 > @gnolith/codex-plugin@0.3.0 verify:pack
 > node scripts/verify-pack.mjs
