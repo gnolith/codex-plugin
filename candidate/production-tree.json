@@ -1,0 +1,11 @@
+{
+  "version": "0.3.0",
+  "name": "@gnolith/codex-plugin",
+  "dependencies": {
+    "smol-toml": {
+      "version": "1.7.0",
+      "resolved": "https://registry.npmjs.org/smol-toml/-/smol-toml-1.7.0.tgz",
+      "overridden": false
+    }
+  }
+}

@@ -1,0 +1,40 @@
+node.exe : npm notice
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (npm notice:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+npm notice package: @gnolith/codex-plugin@0.3.0
+npm notice Tarball Contents
+npm notice 803B ARCHIVAL.md
+npm notice 1.1kB LICENSE
+npm notice 2.4kB MIGRATION.md
+npm notice 1.4kB README.md
+npm notice 786B SECURITY.md
+npm notice 389B SUPPORT.md
+npm notice 3.9kB dist/index.d.ts
+npm notice 2.9kB dist/index.d.ts.map
+npm notice 28.3kB dist/index.js
+npm notice 27.3kB dist/index.js.map
+npm notice 289B fixtures/digest-vectors.json
+npm notice 499B fixtures/expected-summary.json
+npm notice 128B fixtures/invalid-reversed.toml
+npm notice 390B fixtures/managed-remote.toml
+npm notice 666B fixtures/operation-v1.json
+npm notice 691B fixtures/README.md
+npm notice 61B fixtures/user-owned.toml
+npm notice 1.3kB package.json
+npm notice Tarball Details
+npm notice name: @gnolith/codex-plugin
+npm notice version: 0.3.0
+npm notice filename: gnolith-codex-plugin-0.3.0.tgz
+npm notice package size: 19.1 kB
+npm notice unpacked size: 73.4 kB
+npm notice shasum: aeaa9dafbe0de552c0a29d3c3c4a9405d2a59b64
+npm notice integrity: sha512-WuYDsxgjP4B7y[...]GSMCl4mjsFgKA==
+npm notice total files: 18
+npm notice
+npm warn This command requires you to be logged in to https://registry.npmjs.org/ (dry-run)
+npm notice Publishing to https://registry.npmjs.org/ with tag latest and default access (dry-run)
++ @gnolith/codex-plugin@0.3.0
