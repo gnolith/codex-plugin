@@ -2,10 +2,10 @@
   "$schema": "http://cyclonedx.org/schema/bom-1.5.schema.json",
   "bomFormat": "CycloneDX",
   "specVersion": "1.5",
-  "serialNumber": "urn:uuid:9423891f-25ec-41a4-ba62-58dce5fb0eff",
+  "serialNumber": "urn:uuid:2d95493c-b367-42ca-b8c6-590e3bd7daf9",
   "version": 1,
   "metadata": {
-    "timestamp": "2026-07-23T20:12:44.173Z",
+    "timestamp": "2026-07-24T22:01:56.884Z",
     "lifecycles": [
       {
         "phase": "build"
