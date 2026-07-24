@@ -26,6 +26,13 @@ if (/modelcontextprotocol|stdio|docker|cloudflare|codex-sites/iu.test(production
   failures.push('forbidden production dependency graph term');
 }
 
+for (const workflow of files.filter((path) => path.startsWith('.github/workflows/') && path.endsWith('.yml'))) {
+  const source = await readFile(new URL(workflow, root), 'utf8');
+  for (const match of source.matchAll(/^\s*-\s+uses:\s+([^\s#]+)/gmu)) {
+    if (!/@[0-9a-f]{40}$/u.test(match[1])) failures.push(`mutable GitHub Action reference in ${workflow}: ${match[1]}`);
+  }
+}
+
 if (failures.length) {
   process.stderr.write(`${failures.join('\n')}\n`);
   process.exit(1);
