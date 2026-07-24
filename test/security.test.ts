@@ -1,4 +1,4 @@
-import { mkdir, mkdtemp, symlink, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, realpath, symlink, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
@@ -43,7 +43,7 @@ describe('adversarial compatibility boundaries', () => {
   it('rejects symlinked receipt files and Git worktree roots', async () => {
     const worktree = await mkdtemp(join(tmpdir(), 'gnolith-worktree-'));
     await writeFile(join(worktree, '.git'), 'gitdir: elsewhere\n');
-    await expect(inspectLegacySetup(worktree)).rejects.toThrow('primary Git worktree');
+    await expect(inspectLegacySetup(await realpath(worktree))).rejects.toThrow('primary Git worktree');
 
     const root = await project();
     const operations = join(root, '.codex', 'gnolith', 'setup', 'operations');
@@ -62,10 +62,11 @@ describe('adversarial compatibility boundaries', () => {
     const parent = await mkdtemp(join(tmpdir(), 'gnolith parent '));
     const root = join(parent, 'Unicode é project');
     await mkdir(join(root, '.git'), { recursive: true });
-    await writeConfig(root, managedBlock(['url = "https://example.test/mcp"']).replace(/\n/gu, '\r'));
-    await writeReceipt(root, { operationId: 'z-operation', planId: 'plan-z' }, 'z.json');
-    await writeReceipt(root, { operationId: 'a-operation', planId: 'plan-a' }, 'a.json');
-    const bundle = await exportLegacyHandoff(root);
+    const canonicalRoot = (await realpath(root)).normalize('NFC');
+    await writeConfig(canonicalRoot, managedBlock(['url = "https://example.test/mcp"']).replace(/\n/gu, '\r'));
+    await writeReceipt(canonicalRoot, { operationId: 'z-operation', planId: 'plan-z' }, 'z.json');
+    await writeReceipt(canonicalRoot, { operationId: 'a-operation', planId: 'plan-a' }, 'a.json');
+    const bundle = await exportLegacyHandoff(canonicalRoot);
     expect(bundle.receipts.map((receipt) => receipt.operationId)).toEqual(['a-operation', 'z-operation']);
     expect(bundle.legacyMarkerDigest).toMatch(/^[0-9a-f]{64}$/u);
   });

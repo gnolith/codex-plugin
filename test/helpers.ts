@@ -1,4 +1,4 @@
-import { mkdir, mkdtemp, writeFile } from 'node:fs/promises';
+import { mkdir, mkdtemp, realpath, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { MANAGED_BEGIN, MANAGED_END } from '../src/index.js';
@@ -6,7 +6,7 @@ import { MANAGED_BEGIN, MANAGED_END } from '../src/index.js';
 export async function project(): Promise<string> {
   const root = await mkdtemp(join(tmpdir(), 'gnolith-legacy-'));
   await mkdir(join(root, '.git'));
-  return root;
+  return (await realpath(root)).normalize('NFC');
 }
 
 export async function writeConfig(root: string, body: string): Promise<void> {
