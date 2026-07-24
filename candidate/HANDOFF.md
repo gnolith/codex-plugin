@@ -3,7 +3,8 @@
 ## Candidate identity
 
 - candidate version: `0.3.0`
-- package source commit: `9356dd8036678e85023f11b7b58a66888f2eaa35`
+- governed package source commit: `8f2786484732c2c8733c8ce8b05b187ffabc8ca5`
+- public repository: `https://github.com/gnolith/codex-plugin`
 - artifact: `gnolith-codex-plugin-0.3.0.tgz`
 - artifact SHA-256:
   `25ec8458130527bbf71662e0dc2c9bea79c0311d6419370b7cfa246fd25ba89c`
@@ -54,9 +55,13 @@ Exact legacy constants:
 - production audit: 0 vulnerabilities
 - CycloneDX 1.5 SBOM: generated
 - provenance publish dry-run: PASS; no publication occurred
+- hosted Ubuntu/macOS/Windows clean gates on protected `main`: PASS
+- hosted CodeQL, dependency review, secret-canary, and provenance gates: PASS
+- secret scanning, push protection, Dependabot security updates: ENABLED
+- zero-approval/no-bypass protected `main` ruleset: ACTIVE
 
-Exact logs, inventory, audit, production tree, SBOM, and checksums are adjacent
-to this file.
+Exact logs, inventory, audit, production tree, SBOM, live governance snapshot,
+and checksums are adjacent to this file.
 
 ## Acceptance ledger
 
