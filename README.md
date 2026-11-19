@@ -1,5 +1,7 @@
 # Gnolith Setup legacy migration compatibility
 
+> **Retired.** Active use of this repository has ended.
+
 This repository is sunset. Alembic is the continuing Gnolith control-plane
 owner; Workshop remains the only Gnolith data-plane MCP.
 
